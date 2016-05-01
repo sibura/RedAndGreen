@@ -1,16 +1,22 @@
-function press() {
-	var count = 0;
-     count ++;
+  var count = 1;
 
-  document.getElementById("first").style.backgroundColor = "Green";
-	document.getElementById("first").value = "New Button Text";
+  function press() {
 
-   if(document.getElementById("first").value = "New Button Text") {
-     	document.getElementById("first").style.backgroundColor = "Green";
-   }
+    count++
+
+    document.getElementById("first").style.backgroundColor = "Green";
+    document.getElementById("first").value = "New Button Text";
+
+    if(count % 2 === 0) {
+      // document.getElementById("first").value ="make red";
+      document.getElementById("first").style.backgroundColor ="green";
+      document.getElementById('button1').innerHTML = "Make red";
+    }
     
-   else {
-		document.getElementById("first").value("Make Green");
-   }
-    return "make Green"
-}
+    else {
+      // document.getElementById("first").value ="make green";
+      document.getElementById("first").style.backgroundColor ="red";
+      document.getElementById('button1').innerHTML = "Make green";
+    }
+  
+  }

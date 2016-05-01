@@ -1,5 +1,5 @@
-function setBackgroundColor(Id, backgroundColor) {
-  // body...
-  document.getElementById(Id).style.backgroundColor = backgroundColor;
+function setBackgroundColor(id, backgroundColor) {
+ 
+  document.getElementById(id).style.backgroundColor = backgroundColor;
   
 } 
